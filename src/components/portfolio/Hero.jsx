@@ -96,10 +96,8 @@ const Hero = () => {
       onMouseMove={onMouseMove}
       className="relative min-h-screen flex flex-col justify-center overflow-hidden"
     >
-      {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-obsidian via-[#07101F] to-obsidian" />
 
-      {/* Main blue glow */}
       <motion.div
         style={{
           x: sx,
@@ -108,7 +106,6 @@ const Hero = () => {
         className="absolute -top-32 -left-32 w-[34rem] h-[34rem] rounded-full bg-blue/15 blur-[130px] animate-pulse-glow"
       />
 
-      {/* Secondary blue glow */}
       <motion.div
         style={{
           x: sx,
@@ -117,7 +114,6 @@ const Hero = () => {
         className="absolute bottom-0 right-0 w-[30rem] h-[30rem] rounded-full bg-blue/10 blur-[120px]"
       />
 
-      {/* Computer Science Grid */}
       <div
         className="absolute inset-0 opacity-[0.13]"
         style={{
@@ -129,10 +125,8 @@ const Hero = () => {
         }}
       />
 
-      {/* Particles */}
       <ParticleField />
 
-      {/* Main Content */}
       <motion.div
         style={{
           y: contentY,
@@ -141,7 +135,6 @@ const Hero = () => {
         className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20 w-full pt-28 pb-16"
       >
 
-        {/* Name */}
         <h1
           className="font-display font-bold tracking-tight leading-[1.02] text-white text-5xl sm:text-6xl lg:text-7xl xl:text-8xl"
           data-testid="hero-name"
@@ -168,7 +161,6 @@ const Hero = () => {
           ))}
         </h1>
 
-        {/* University + Interests */}
         <motion.div
           initial={{
             opacity: 0,
@@ -193,7 +185,6 @@ const Hero = () => {
           </p>
         </motion.div>
 
-        {/* Intro */}
         <motion.p
           initial={{
             opacity: 0,
@@ -213,7 +204,6 @@ const Hero = () => {
           {HERO.intro}
         </motion.p>
 
-        {/* Buttons */}
         <motion.div
           initial={{
             opacity: 0,
@@ -257,7 +247,6 @@ const Hero = () => {
           </a>
         </motion.div>
 
-        {/* Stats */}
         <motion.div
           initial={{
             opacity: 0,
@@ -273,7 +262,6 @@ const Hero = () => {
           data-testid="hero-stats"
         >
 
-          {/* University */}
           <div className="bg-obsidian-soft/80 backdrop-blur px-6 py-5">
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-slate-500 mb-1.5">
               University
@@ -284,7 +272,6 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Major */}
           <div className="bg-obsidian-soft/80 backdrop-blur px-6 py-5">
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-slate-500 mb-1.5">
               Major
@@ -295,7 +282,6 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Interests */}
           <div className="bg-obsidian-soft/80 backdrop-blur px-6 py-5">
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-slate-500 mb-1.5">
               Interests
@@ -309,7 +295,6 @@ const Hero = () => {
         </motion.div>
       </motion.div>
 
-      {/* Scroll Indicator */}
       <motion.button
         initial={{
           opacity: 0,
