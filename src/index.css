@@ -86,7 +86,6 @@
   }
 }
 
-/* Marquee */
 
 @keyframes marquee-x {
   from {
@@ -106,7 +105,6 @@
   animation-play-state: paused;
 }
 
-/* Floating elements */
 
 @keyframes float-slow {
   0%,
@@ -123,7 +121,6 @@
   animation: float-slow 7s ease-in-out infinite;
 }
 
-/* Glow */
 
 @keyframes pulse-glow {
   0%,
