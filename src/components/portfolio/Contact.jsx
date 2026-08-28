@@ -69,13 +69,10 @@ const Contact = () => {
       data-testid="contact-section"
       className="relative py-28 md:py-40 overflow-hidden"
     >
-      {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-obsidian via-[#071426] to-obsidian" />
 
-      {/* Blue glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[42rem] h-[42rem] rounded-full bg-blue/10 blur-[150px] pointer-events-none" />
 
-      {/* Computer Science Grid */}
       <div
         className="absolute inset-0 opacity-[0.08]"
         style={{
@@ -89,7 +86,6 @@ const Contact = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20 text-center">
 
-        {/* Label */}
         <Reveal>
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-blue-light mb-6">
             <span className="inline-block w-8 h-px bg-blue-light/60 align-middle mr-3" />
@@ -100,7 +96,6 @@ const Contact = () => {
           </p>
         </Reveal>
 
-        {/* Heading */}
         <Reveal delay={0.1}>
           <h2
             className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1]"
@@ -113,14 +108,12 @@ const Contact = () => {
           </h2>
         </Reveal>
 
-        {/* Description */}
         <Reveal delay={0.2}>
           <p className="mt-6 max-w-xl mx-auto text-base sm:text-lg text-slate-400 leading-relaxed">
             {CONTACT.subline}
           </p>
         </Reveal>
 
-        {/* Social Links */}
         <Reveal delay={0.3}>
           <div
             className="mt-10 flex flex-wrap items-center justify-center gap-3"
@@ -145,21 +138,18 @@ const Contact = () => {
                   className="group inline-flex items-center gap-3 rounded-full glass-panel px-6 py-3.5 text-sm font-medium text-slate-200 transition-all duration-300 hover:-translate-y-1 hover:border-blue/50 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)]"
                 >
 
-                  {/* LinkedIn */}
                   {icon === "linkedin" && (
                     <span className="flex h-5 w-5 items-center justify-center text-blue-light transition-colors duration-300 group-hover:text-white">
                       <LinkedInIcon />
                     </span>
                   )}
 
-                  {/* GitHub */}
                   {icon === "github" && (
                     <span className="flex h-5 w-5 items-center justify-center text-blue-light transition-colors duration-300 group-hover:text-white">
                       <GitHubIcon />
                     </span>
                   )}
 
-                  {/* Email */}
                   {icon === "mail" && (
                     <Mail
                       size={18}
@@ -179,7 +169,6 @@ const Contact = () => {
           </div>
         </Reveal>
 
-        {/* Copy Email */}
         <Reveal delay={0.4}>
           <button
             onClick={copyEmail}
