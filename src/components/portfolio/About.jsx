@@ -10,13 +10,13 @@ const About = () => {
       data-testid="about-section"
       className="relative py-24 md:py-36 overflow-hidden"
     >
-      {/* Blue background glow */}
+ 
       <div className="absolute top-1/3 right-0 w-96 h-96 rounded-full bg-blue/[0.07] blur-[130px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
 
-          {/* Intro */}
+         
           <div className="lg:col-span-5">
             <SectionHeading
               label={ABOUT.label}
@@ -29,7 +29,7 @@ const About = () => {
               </p>
             </Reveal>
 
-            {/* University */}
+           
             <Reveal delay={0.2}>
               <div className="mt-8 flex items-center gap-4 rounded-2xl border border-blue-900/50 bg-blue-950/30 backdrop-blur-sm p-5">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400">
@@ -52,7 +52,7 @@ const About = () => {
               </div>
             </Reveal>
 
-            {/* Highlights */}
+           
             <Reveal delay={0.3}>
               <div className="mt-6 flex flex-wrap gap-2">
                 {ABOUT.highlights.map((highlight) => (
@@ -67,7 +67,7 @@ const About = () => {
             </Reveal>
           </div>
 
-          {/* Chapters */}
+         
           <div className="lg:col-span-7 space-y-4">
             {ABOUT.chapters.map((chapter, index) => (
               <Reveal
@@ -106,7 +106,7 @@ const About = () => {
                     </div>
                   </div>
 
-                  {/* Hover line */}
+                  
                   <div className="absolute bottom-0 left-0 h-px w-0 bg-blue-light transition-all duration-500 group-hover:w-full" />
                 </motion.article>
               </Reveal>
