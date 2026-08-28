@@ -106,7 +106,6 @@ const Navbar = () => {
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20 h-[70px] flex items-center justify-between">
 
-          {/* Logo */}
           <a
             href="#home"
             data-testid="nav-brand-link"
@@ -121,7 +120,6 @@ const Navbar = () => {
             </span>
           </a>
 
-          {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-1">
             {NAV_LINKS.map(
               ({
@@ -166,7 +164,6 @@ const Navbar = () => {
             )}
           </ul>
 
-          {/* Mobile Button */}
           <button
             data-testid="nav-mobile-menu-btn"
             onClick={() =>
@@ -184,7 +181,6 @@ const Navbar = () => {
         </nav>
       </motion.header>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {open && (
           <motion.div
