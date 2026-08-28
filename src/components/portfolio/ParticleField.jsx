@@ -32,7 +32,7 @@ const ParticleField = () => {
 
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-      /* Small blue data points */
+      
       particles = Array.from(
         {
           length: Math.min(
@@ -49,7 +49,6 @@ const ParticleField = () => {
         })
       );
 
-      /* Circuit paths */
       circuits = [];
 
       const rows = Math.floor(height / 110);
@@ -99,7 +98,6 @@ const ParticleField = () => {
 
       ctx.stroke();
 
-      /* Circuit nodes */
       ctx.beginPath();
 
       ctx.arc(
@@ -132,7 +130,6 @@ const ParticleField = () => {
         height
       );
 
-      /* Circuit board */
       circuits.forEach(drawCircuit);
 
       /* Data particles */
