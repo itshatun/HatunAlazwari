@@ -20,10 +20,8 @@ const Projects = () => {
       data-testid="projects-section"
       className="relative py-28 md:py-40 overflow-hidden bg-[#020817]"
     >
-      {/* Background */}
       <div className="absolute inset-0 bg-[#020817]" />
 
-      {/* Computer Science Grid */}
       <div
         className="absolute inset-0 opacity-[0.04] pointer-events-none"
         style={{
@@ -35,12 +33,10 @@ const Projects = () => {
         }}
       />
 
-      {/* Blue Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[40rem] rounded-full bg-blue-600/[0.07] blur-[150px] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
 
-        {/* Heading */}
         <Reveal>
           <div className="mb-16">
 
@@ -67,7 +63,6 @@ const Projects = () => {
           </div>
         </Reveal>
 
-        {/* Projects */}
         {projects.length > 0 ? (
 
           <div
@@ -93,7 +88,6 @@ const Projects = () => {
                     className="group relative h-full overflow-hidden rounded-2xl border border-blue-950/70 bg-[#071426]/75 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:border-blue-500/40 hover:shadow-[0_25px_70px_rgba(30,64,175,0.18)]"
                   >
 
-                    {/* Project Image */}
                     {projectImage && (
                       <div className="relative h-56 sm:h-64 overflow-hidden">
 
@@ -105,14 +99,12 @@ const Projects = () => {
 
                         <div className="absolute inset-0 bg-gradient-to-t from-[#071426] via-transparent to-transparent" />
 
-                        {/* Number */}
                         <div className="absolute top-5 left-5">
                           <span className="font-mono text-xs text-blue-300 rounded-full border border-blue-400/20 bg-[#020817]/80 backdrop-blur px-3 py-1.5">
                             {project.index}
                           </span>
                         </div>
 
-                        {/* Tag */}
                         <div className="absolute top-5 right-5">
                           <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-blue-300 rounded-full border border-blue-400/20 bg-[#020817]/80 backdrop-blur px-3 py-1.5">
                             {project.tag}
@@ -122,10 +114,8 @@ const Projects = () => {
                       </div>
                     )}
 
-                    {/* Content */}
                     <div className="p-6 sm:p-8">
 
-                      {/* Category + Icon */}
                       <div className="flex items-start justify-between gap-4">
 
                         <div>
@@ -151,12 +141,10 @@ const Projects = () => {
 
                       </div>
 
-                      {/* Description */}
                       <p className="mt-5 text-sm sm:text-base text-slate-400 leading-relaxed">
                         {project.description}
                       </p>
 
-                      {/* Highlights */}
                       {Array.isArray(project.highlights) &&
                         project.highlights.length > 0 && (
 
@@ -185,7 +173,6 @@ const Projects = () => {
 
                         )}
 
-                      {/* Technologies */}
                       {Array.isArray(project.tech) &&
                         project.tech.length > 0 && (
 
@@ -206,7 +193,6 @@ const Projects = () => {
 
                         )}
 
-                      {/* Buttons */}
                       <div className="mt-8 flex flex-wrap gap-3">
 
                         {project.github && (
@@ -254,7 +240,6 @@ const Projects = () => {
 
                     </div>
 
-                    {/* Bottom Glow */}
                     <div className="absolute bottom-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
 
                   </article>
