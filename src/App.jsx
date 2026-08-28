@@ -47,28 +47,20 @@ function App() {
       <Navbar />
 
       <main>
-        {/* 01 — Home */}
         <Hero />
 
-        {/* Marquee */}
         <Marquee />
 
-        {/* 02 — About */}
         <About />
 
-        {/* 03 — Education */}
         <Education />
 
-        {/* 04 — Skills */}
         <Skills />
 
-        {/* 05 — Projects */}
         <Projects />
 
-        {/* 06 — Certifications */}
         <Certifications />
 
-        {/* 07 — Contact */}
         <Contact />
       </main>
 
