@@ -28,10 +28,8 @@ const Marquee = () => {
         ))}
       </div>
 
-      {/* Left fade */}
       <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-obsidian to-transparent" />
 
-      {/* Right fade */}
       <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-obsidian to-transparent" />
     </div>
   );
