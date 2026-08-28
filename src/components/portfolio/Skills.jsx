@@ -72,12 +72,10 @@ const Skills = () => {
       data-testid="skills-section"
       className="relative py-24 md:py-36 bg-[#030B18] overflow-hidden"
     >
-      {/* Background glow */}
       <div className="absolute top-0 left-1/4 w-80 h-80 rounded-full bg-blue-600/[0.07] blur-[120px] pointer-events-none" />
 
       <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-cyan-500/[0.04] blur-[140px] pointer-events-none" />
 
-      {/* Technical grid */}
       <div
         className="absolute inset-0 opacity-[0.04] pointer-events-none"
         style={{
@@ -91,7 +89,6 @@ const Skills = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
 
-        {/* Heading + Tabs */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-14">
 
           <SectionHeading
@@ -148,7 +145,6 @@ const Skills = () => {
           </Reveal>
         </div>
 
-        {/* Skills */}
         <div
           className="grid lg:grid-cols-2 gap-5"
           data-testid="skills-grid"
@@ -164,7 +160,6 @@ const Skills = () => {
           </AnimatePresence>
         </div>
 
-        {/* Technical footer */}
         <Reveal delay={0.3}>
           <div className="mt-12 flex items-center gap-3 text-slate-600">
             <Code2 size={15} className="text-blue-500/60" />
