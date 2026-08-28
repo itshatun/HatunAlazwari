@@ -20,7 +20,6 @@ const Education = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-20">
 
-          {/* ================= EDUCATION ================= */}
           <div>
             <SectionHeading
               label={EDUCATION.label}
@@ -33,26 +32,20 @@ const Education = () => {
                 data-testid="education-card"
               >
 
-                {/* Background Glow */}
                 <div className="absolute -top-20 -right-20 w-56 h-56 rounded-full bg-blue/10 blur-[80px] pointer-events-none" />
 
-                {/* Main Content */}
                 <div className="relative flex items-start justify-between gap-8">
 
-                  {/* Education Information */}
                   <div className="flex-1">
 
-                    {/* Graduation Icon */}
                     <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue/10 border border-blue/25 text-blue-light mb-6">
                       <GraduationCap size={22} />
                     </span>
 
-                    {/* Degree */}
                     <h3 className="font-display text-xl sm:text-2xl font-semibold text-white tracking-tight">
                       {EDUCATION.degree}
                     </h3>
 
-                    {/* University */}
                     <div className="mt-3 flex items-center gap-2 text-blue-light">
                       <MapPin size={17} />
 
@@ -61,7 +54,6 @@ const Education = () => {
                       </p>
                     </div>
 
-                    {/* Period */}
                     <div className="mt-2 flex items-center gap-2">
                       <CalendarDays
                         size={15}
@@ -75,7 +67,6 @@ const Education = () => {
 
                   </div>
 
-                  {/* ================= TU LOGO ================= */}
                   <div className="shrink-0 flex items-center justify-center pt-2">
 
                     <img
@@ -99,14 +90,12 @@ const Education = () => {
                   </div>
                 </div>
 
-                {/* Divider */}
                 <div className="relative mt-7 pt-6 border-t border-white/[0.06]">
 
                   <p className="text-sm text-slate-400 leading-relaxed">
                     {EDUCATION.focus}
                   </p>
 
-                  {/* Student Badge */}
                   <p className="mt-4 inline-flex rounded-full border border-blue/20 bg-blue/[0.05] px-4 py-2 text-xs font-medium text-blue-light">
                     {EDUCATION.note}
                   </p>
@@ -118,7 +107,6 @@ const Education = () => {
           </div>
 
 
-          {/* ================= ACHIEVEMENTS ================= */}
           <div>
 
             <SectionHeading
@@ -157,7 +145,6 @@ const Education = () => {
                     data-testid={`achievement-item-${index}`}
                   >
 
-                    {/* Trophy */}
                     <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue/10 border border-blue/20 text-blue-light">
 
                       <Trophy size={16} />
@@ -165,7 +152,6 @@ const Education = () => {
                     </span>
 
 
-                    {/* Achievement Content */}
                     <div>
 
                       <div className="flex flex-wrap items-baseline gap-x-3">
